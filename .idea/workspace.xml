@@ -29,7 +29,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_003_LongestSubstringWithoutRepeatingCharacters.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="1552">
               <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
               <folding>
                 <element signature="e#1103#1104#0" expanded="true" />
@@ -43,8 +43,8 @@
         <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="350">
-                <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <first_editor relative-caret-position="280">
+                <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
               </first_editor>
               <second_editor />
             </state>
@@ -69,6 +69,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -86,6 +89,7 @@
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -103,26 +107,6 @@
               <item name="leetcode-practice" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="leetcode-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="practices" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="practices" type="462c0819:PsiDirectoryNode" />
-              <item name="easy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="leetcode-practice" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leetcode-practice" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="practices" type="462c0819:PsiDirectoryNode" />
-              <item name="medium" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -132,6 +116,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/hiki/practices/medium" />
@@ -217,16 +202,15 @@
       <option name="presentableId" value="Default" />
       <updated>1567168084172</updated>
       <workItem from="1567168086572" duration="1704000" />
-      <workItem from="1567390146961" duration="11170000" />
+      <workItem from="1567390146961" duration="11816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12874000" />
+    <option name="totallyTimeSpent" value="13520000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16204691" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -235,7 +219,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13651137" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.13665944" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -289,8 +273,8 @@
     <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="350">
-            <caret line="10" column="15" lean-forward="true" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <first_editor relative-caret-position="280">
+            <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -298,7 +282,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_003_LongestSubstringWithoutRepeatingCharacters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="1552">
           <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
             <element signature="e#1103#1104#0" expanded="true" />
