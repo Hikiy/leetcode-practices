@@ -4,13 +4,15 @@
 这里只是自己练习，记录笔记。
 
 ## 目录
-**001.两数之和**
+**0001.两数之和**
 
-**002.两数相加**
+**0002.两数相加**
+**0007.整数反转**
+**0009.回文数**
 
 <br/><br/><br/>
 
-## 001.两数之和
+## 0001.两数之和
 
 给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 **两个** 整数，并返回他们的数组下标。
 
@@ -64,7 +66,7 @@ public class Easy_001_TwoSum {
     }
 }
 ```
-## 002.两数相加
+## 0002.两数相加
 给出两个 **非空** 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 **逆序** 的方式存储的，并且它们的每个节点只能存储 **一位** 数字。
 
 如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。
@@ -125,5 +127,120 @@ public class Easy_001_TwoSum {
                 System.out.print(" -> ");
             }
         }
+    }
+```
+
+## 0007.整数反转
+给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
+
+示例 1:
+
+```
+输入: 123
+输出: 321
+```
+
+示例 2:
+
+```
+输入: -123
+输出: -321
+```
+示例 3:
+
+```
+输入: 120
+输出: 21
+```
+
+注意:
+
+假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。
+
+### 解决方法
+取最低位，然后放在新的数字的下一位，只是多了溢出判断
+
+### 代码
+
+```
+	//Time complexity   O(log(x)) => O(n)
+    //Space complexity  O(1)
+    public static int reverse(int x) {
+        int rev = 0;
+        while (x != 0) {
+            int pop = x % 10;
+            x /= 10;
+            if (rev > Integer.MAX_VALUE/10 || (rev == Integer.MAX_VALUE / 10 && pop > 7)) return 0;
+            if (rev < Integer.MIN_VALUE/10 || (rev == Integer.MIN_VALUE / 10 && pop < -8)) return 0;
+            rev = rev * 10 + pop;
+        }
+        return rev;
+    }
+
+    public static void main(String[] args){
+        System.out.println(reverse(547957));
+        System.out.println(reverse(-49003));
+        System.out.println(reverse(1463847413));
+    }
+```
+
+## 0009.回文数
+判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+
+示例 1:
+
+```
+输入: 121
+输出: true
+```
+
+示例 2:
+
+```
+输入: -121
+输出: false
+解释: 从左向右读, 为 -121 。 从右向左读, 为 121- 。因此它不是一个回文数。
+```
+
+示例 3:
+
+```
+输入: 10
+输出: false
+解释: 从右向左读, 为 01 。因此它不是一个回文数。
+```
+
+### 解决方法
+取首位和结尾判断即可，首位使用一个高位计数进行判断，结尾用求余获取
+
+### 代码
+
+```
+	//Time complexity   O(n)
+    //Space complexity  O(1)
+    public static boolean isPalindrome(int x) {
+        if (x < 0) {
+            return false;
+        }
+        int hight = 1;
+        int tmp = x;
+        while (tmp >= 10) {
+            hight *= 10;
+            tmp /= 10;
+        }
+        while (x != 0) {
+            if (x % 10 != x / hight) {
+                return false;
+            }
+            x = x % hight / 10;
+            hight /= 100;
+        }
+        return true;
+    }
+
+    public static void main(String[] args){
+        System.out.println(isPalindrome(121));
+        System.out.println(isPalindrome(-121));
+        System.out.println(isPalindrome(10));
     }
 ```

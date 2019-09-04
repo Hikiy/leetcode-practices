@@ -7,7 +7,7 @@ import java.util.Map;
  * @author ：hiki
  * 2019/8/30 20:31
  */
-public class Easy_001_TwoSum {
+public class Easy_0001_TwoSum {
     //两数之和
 
     //给定一个整数数组 nums 和一个目标值 target，

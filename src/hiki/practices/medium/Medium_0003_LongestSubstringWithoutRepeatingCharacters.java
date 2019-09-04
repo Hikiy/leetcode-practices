@@ -7,7 +7,7 @@ import java.util.Map;
  * @author ：hiki
  * 2019/8/30 20:31
  */
-public class Medium_003_LongestSubstringWithoutRepeatingCharacters {
+public class Medium_0003_LongestSubstringWithoutRepeatingCharacters {
     //给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
     //
     //示例 1:

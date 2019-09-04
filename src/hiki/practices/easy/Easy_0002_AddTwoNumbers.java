@@ -4,7 +4,7 @@ package hiki.practices.easy;
  * @author ：hiki
  * 2019/9/2 10:11
  */
-public class Easy_002_AddTwoNumbers {
+public class Easy_0002_AddTwoNumbers {
     //两数相加
 
     //给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，
