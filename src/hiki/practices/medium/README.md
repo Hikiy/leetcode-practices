@@ -4,13 +4,15 @@
 这里只是自己练习，记录笔记。
 
 ## 目录
-**003.无重复字符的最长子串(滑动窗口)**
-**005.最长回文子串(动态规划,中心扩展)**
-**516.最长回文子序列(动态规划)**
+**0003.无重复字符的最长子串(滑动窗口)**
+**0005.最长回文子串(动态规划,中心扩展)**
+**0008.字符串转换整数 (atoi)**
+**0011.盛最多水的容器(双指针)**
+**0516.最长回文子序列(动态规划)**
 
 <br/><br/><br/>
 
-## 003.无重复字符的最长子串(滑动窗口)
+## 0003.无重复字符的最长子串(滑动窗口)
 
 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。
 
@@ -60,7 +62,7 @@
     }
 ```
 
-## 005.最长回文子串(动态规划,中心扩展)
+## 0005.最长回文子串(动态规划,中心扩展)
 给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
 
 示例 1：
@@ -176,8 +178,130 @@ Space complexity  O(1)
     }
 ```
 
+## 0008.字符串转换整数 (atoi)
 
-## 516.最长回文子序列(动态规划)
+请你来实现一个 atoi 函数，使其能将字符串转换成整数。
+
+首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。
+
+当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。
+
+该字符串除了有效的整数部分之后也可能会存在多余的字符，这些字符可以被忽略，它们对于函数不应该造成影响。
+
+注意：假如该字符串中的第一个非空格字符不是一个有效整数字符、字符串为空或字符串仅包含空白字符时，则你的函数不需要进行转换。
+
+在任何情况下，若函数不能进行有效的转换时，请返回 0。
+
+说明：
+
+假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231,  231 − 1]。如果数值超过这个范围，请返回  INT_MAX (231 − 1) 或 INT_MIN (−231) 。
+
+
+### 解决方法
+没什么特殊方法，其实还挺简单的，就是遍历，然后一位位判断
+
+### 代码
+
+```
+	//Time complexity   O(n)
+    //Space complexity  O(1)
+    public static int myAtoi(String str) {
+        str = str.trim();
+        int count = str.length();
+        if( count == 0 ){
+            return 0;
+        }
+        char first = str.charAt(0);
+        if( !Character.isDigit(first) && first != '-' && first != '+' ){
+            return 0;
+        }
+
+        int num = 0;
+        for(int i=0; i< count; i++){
+            char current = str.charAt(i);
+            if( current == '.' ){
+                return num;
+            }
+            if( i>=1 && !Character.isDigit(current) ){
+                return num;
+            }
+            if( Character.isDigit(current) ){
+                int currentnum = Integer.parseInt(String.valueOf(current));
+                if( first == '-' ){
+                    if( num < Integer.MIN_VALUE/10 || (num == Integer.MIN_VALUE/10 && currentnum > 8 ) ){
+                        return Integer.MIN_VALUE;
+                    }else{
+                        num = num * 10;
+                        num = num - currentnum;
+                    }
+                }else{
+                    if( num > Integer.MAX_VALUE/10 || (num == Integer.MAX_VALUE/10 && currentnum > 7 ) ){
+                        return Integer.MAX_VALUE;
+                    }else{
+                        num = num * 10;
+                        num = num + currentnum;
+                    }
+                }
+            }
+        }
+        return num;
+    }
+
+    public static void main(String[] args){
+        String s = "  -0012a42";
+        System.out.println(myAtoi(s));
+    }
+```
+
+## 0011.盛最多水的容器(双指针)
+
+给定 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。
+
+说明：你不能倾斜容器，且 n 的值至少为 2。
+
+图中垂直线代表输入数组 [1,8,6,2,5,4,8,3,7]。在此情况下，容器能够容纳水（表示为蓝色部分）的最大值为 49。
+
+示例:
+
+输入: [1,8,6,2,5,4,8,3,7]
+输出: 49
+
+
+### 解决方法
+除了暴力解，可以使用双指针。
+
+因为面积的大小其实取决于较小的那一条边，则通过一次循环，算出较大的面积，边长较短的那个指针进行位移即可
+
+### 代码
+
+```
+	//双指针法
+    //Time complexity   O(n)
+    //Space complexity  O(1)
+    public static int maxArea(int[] height) {
+        int maxArea = 0;
+        int i = 0;
+        int j = height.length-1;
+
+        while( i < j ){
+            maxArea = Math.max(maxArea, Math.min(height[i], height[j])*(j-i));
+            if( height[i] < height[j] ){
+                i++;
+            }else{
+                j--;
+            }
+        }
+        return maxArea;
+    }
+
+
+    public static void main(String[] args){
+        int[] a= {1,8,6,2,5,4,8,3,7};
+        System.out.println(maxArea(a));
+    }
+```
+
+## 0516.最长回文子序列(动态规划)
 给定一个字符串s，找到其中最长的回文子序列。可以假设s的最大长度为1000。
 
 注意：子序列不是子串！
