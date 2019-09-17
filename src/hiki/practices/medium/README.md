@@ -9,6 +9,7 @@
 **0008.字符串转换整数 (atoi)**
 **0011.盛最多水的容器(双指针)**
 **0015.三数之和**
+**0017.电话号码的字母组合**
 **0516.最长回文子序列(动态规划)**
 
 <br/><br/><br/>
@@ -363,6 +364,65 @@ Space complexity  O(1)
         int[] nums = {1,-1,-1,0};
         List<List<Integer>> ans = threeSum(nums);
         System.out.println(ans);
+    }
+```
+## 0017.电话号码的字母组合
+
+给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。
+
+给出数字到字母的映射如下（与电话按键相同）。注意 1 不对应任何字母。
+
+示例:
+
+```
+输入："23"
+输出：["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+```
+
+### 解决方法
+递归即可
+
+### 代码
+
+```
+	//Time complexity   O(3^N×4^M)  其中 N 是输入数字中对应 3 个字母的数目（比方说 2，3，4，5，6，8）， M 是输入数字中对应 4 个字母的数目（比方说 7，9），N+M 是输入数字的总数。
+    //Space complexity  O(3^N×4^M)
+	static Map<Character, String> phone = new HashMap<Character, String>() {{
+        put('2', "abc");
+        put('3', "def");
+        put('4', "ghi");
+        put('5', "jkl");
+        put('6', "mno");
+        put('7', "pqrs");
+        put('8', "tuv");
+        put('9', "wxyz");
+    }};
+
+    static List<String> output = new ArrayList<String>();
+
+    public static void backtrack(String combination, String next_digits){
+        if( next_digits.length() == 0 ){
+            output.add(combination);
+        }else{
+            char digit = next_digits.charAt(0);
+            String letters = phone.get(digit);
+            for (int i = 0; i<letters.length(); i++){
+                backtrack(combination+letters.charAt(i), next_digits.substring(1));
+            }
+        }
+
+    }
+
+    public static List<String> letterCombinations(String digits) {
+        if(digits.length()!=0){
+            backtrack("", digits);
+        }
+        return output;
+    }
+
+    public static void main(String[] args){
+        String a = "23";
+        System.out.println(letterCombinations(a));
     }
 ```
 
