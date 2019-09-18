@@ -4,13 +4,14 @@
 这里只是自己练习，记录笔记。
 
 ## 目录
-**0003.无重复字符的最长子串(滑动窗口)**
-**0005.最长回文子串(动态规划,中心扩展)**
-**0008.字符串转换整数 (atoi)**
-**0011.盛最多水的容器(双指针)**
-**0015.三数之和**
-**0017.电话号码的字母组合**
-**0516.最长回文子序列(动态规划)**
+**0003.无重复字符的最长子串(滑动窗口)**  
+**0005.最长回文子串(动态规划,中心扩展)**  
+**0008.字符串转换整数 (atoi)**  
+**0011.盛最多水的容器(双指针)**  
+**0015.三数之和**  
+**0016.最接近的三数之和**  
+**0017.电话号码的字母组合**  
+**0516.最长回文子序列(动态规划)**  
 
 <br/><br/><br/>
 
@@ -366,6 +367,52 @@ Space complexity  O(1)
         System.out.println(ans);
     }
 ```
+
+## 0016.最接近的三数之和
+给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+
+```
+例如，给定数组 nums = [-1，2，1，-4], 和 target = 1.
+
+与 target 最接近的三个数的和为 2. (-1 + 2 + 1 = 2).
+```
+
+### 解决方法
+排序+双指针
+将数组排序，遍历数组，选定一个数，再使用双指针。
+
+### 代码
+
+```
+    //Time complexity   O(n2)
+    //Space complexity  O(1)
+    public static int threeSumClosest(int[] nums, int target) {
+        int len = nums.length;
+        int ans= nums[0]+nums[1]+nums[2];
+        Arrays.sort(nums);
+        for(int i = 0; i<len; i++){
+            int L = i+1;
+            int R = len-1;
+            while( L < R ){
+                int sum = nums[i] + nums[L] + nums[R];
+                if( Math.abs(target-sum) < Math.abs(target- ans) ){
+                    ans = sum;
+                }
+                if(sum < target)L++;
+                else if(sum > target)R--;
+                else return ans;
+            }
+        }
+        return ans;
+    }
+
+    public static void main(String[] args){
+//        int[] a = {-1, 2, 1, -4};
+        int[] a = {1, 2, 4, 8, 16, 32, 64, 128};
+        System.out.println(threeSumClosest(a, 82));
+    }
+```
+
 ## 0017.电话号码的字母组合
 
 给定一个仅包含数字 2-9 的字符串，返回所有它能表示的字母组合。

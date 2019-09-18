@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="517fbce6-13ec-46e9-a92d-1f5b68f59ac5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hiki/practices/medium/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/hiki/practices/medium/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,18 +22,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0008_StringtoInteger.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1365">
-              <caret line="39" column="86" selection-start-line="39" selection-start-column="86" selection-end-line="39" selection-end-column="86" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0015_3Sum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
+            <state relative-caret-position="175">
               <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -41,33 +33,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0017_CombinationsOfAPhoneNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+            <state relative-caret-position="375">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#378#386#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0011_ContainerWithMostWater.java">
+        <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0016_3SumClosest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="479">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0516_LongestPalindromicSubsequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="26" selection-start-line="26" selection-end-line="27" />
+        <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="213">
+                <caret line="370" column="3" lean-forward="true" selection-start-line="370" selection-start-column="3" selection-end-line="370" selection-end-column="16" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="350">
+                <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -147,8 +153,6 @@
         <option value="$PROJECT_DIR$/src/hiki/practices/hard/Medium_003_LongestSubstringWithoutRepeatingCharacters.java" />
         <option value="$PROJECT_DIR$/src/hiki/practices/hard/README.md" />
         <option value="$PROJECT_DIR$/src/hiki/practices/hard/Medium_004_MedianOfTwoSortedArrays.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/hiki/practices/medium/README.md" />
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_005_LongestPalindromicSubstring.java" />
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_516_LongestPalindromicSubsequence.java" />
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_006_ZigZagConversion.java" />
@@ -161,6 +165,9 @@
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_0008_StringtoInteger.java" />
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_0015_3Sum.java" />
         <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_0017_CombinationsOfAPhoneNumber.java" />
+        <option value="$PROJECT_DIR$/src/hiki/practices/medium/Medium_0016_3SumClosest.java" />
+        <option value="$PROJECT_DIR$/src/hiki/practices/medium/README.md" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -178,6 +185,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +230,6 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,7 +263,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Medium_0017_CombinationsOfAPhoneNumber">
+  <component name="RunManager" selected="Application.Medium_0016_3SumClosest">
     <configuration name="Easy_0014_LongestCommonPrefix" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hiki.practices.easy.Easy_0014_LongestCommonPrefix" />
       <module name="leetcode-practice" />
@@ -283,8 +290,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Medium_0011_ContainerWithMostWater" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hiki.practices.medium.Medium_0011_ContainerWithMostWater" />
+    <configuration name="Medium_0015_3Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hiki.practices.medium.Medium_0015_3Sum" />
       <module name="leetcode-practice" />
       <extension name="coverage">
         <pattern>
@@ -296,8 +303,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Medium_0015_3Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hiki.practices.medium.Medium_0015_3Sum" />
+    <configuration name="Medium_0016_3SumClosest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hiki.practices.medium.Medium_0016_3SumClosest" />
       <module name="leetcode-practice" />
       <extension name="coverage">
         <pattern>
@@ -324,11 +331,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Medium_0016_3SumClosest" />
         <item itemvalue="Application.Medium_0017_CombinationsOfAPhoneNumber" />
         <item itemvalue="Application.Medium_0015_3Sum" />
         <item itemvalue="Application.Medium_0008_StringtoInteger" />
         <item itemvalue="Application.Easy_0014_LongestCommonPrefix" />
-        <item itemvalue="Application.Medium_0011_ContainerWithMostWater" />
       </list>
     </recent_temporary>
   </component>
@@ -351,24 +358,26 @@
       <workItem from="1568164888247" duration="8850000" />
       <workItem from="1568251323512" duration="4444000" />
       <workItem from="1568596480876" duration="7362000" />
-      <workItem from="1568682251651" duration="6270000" />
+      <workItem from="1568682251651" duration="6871000" />
+      <workItem from="1568769273222" duration="2624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102405000" />
+    <option name="totallyTimeSpent" value="105630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.1748401" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989154" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.5010846" side_tool="true" weight="0.1684435" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.29609543" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.29609543" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -450,16 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="210">
-            <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/hiki/practices/hard/Hard_0010_RegularExpressionMatching.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -474,16 +473,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="490">
-            <caret line="14" selection-start-line="14" selection-end-line="14" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -570,9 +559,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0017_CombinationsOfAPhoneNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0015_3Sum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
+        <state relative-caret-position="175">
           <caret line="17" column="4" selection-start-line="17" selection-start-column="4" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -580,14 +579,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0017_CombinationsOfAPhoneNumber.java">
+    <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/Medium_0016_3SumClosest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#378#386#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="479">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hiki/practices/medium/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="213">
+            <caret line="370" column="3" lean-forward="true" selection-start-line="370" selection-start-column="3" selection-end-line="370" selection-end-column="16" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="350">
+            <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
