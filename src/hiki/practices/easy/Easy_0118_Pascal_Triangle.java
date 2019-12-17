@@ -4,11 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
-*
-* @param
-* @return
-*
-* @author Hiki
+ * 118. 杨辉三角
 */
 public class Easy_0118_Pascal_Triangle {
     public List<List<Integer>> generate(int numRows) {
